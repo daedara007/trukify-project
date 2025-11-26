@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Homepage from '../components/Homepage.vue'
-import AboutPage from '../components/AboutPage.vue'
-import HelpPage from '../components/HelpPage.vue'
+import PageHome from '../components/PageHome.vue'
+import PageAbout from '../components/PageAbout.vue'
+import PageHelp from '../components/PageHelp.vue'
 import Placeholder from '../components/Placeholder.vue'
 
 const routes = [
-  { path: '/', component: Homepage },
+  { path: '/', component: PageHome },
   { path: '/armada', component: Placeholder },
-  { path: '/tentang', component: AboutPage },
-  { path: '/bantuan', component: HelpPage },
+  { path: '/tentang', component: PageAbout },
+  { path: '/bantuan', component: PageHelp },
   { path: '/sewa', component: Placeholder },
 ]
 
