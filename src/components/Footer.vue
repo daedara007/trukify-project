@@ -34,10 +34,10 @@
                   <h2 class="mb-6 text-sm font-bold text-heading">Legal</h2>
                   <ul class="text-body font-medium">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Syarat Dan Ketentuan</a>
+                          <a href="/syarat-dan-ketentuan" class="hover:underline">Syarat Dan Ketentuan</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Pemberitahuan Privasi</a>
+                          <a href="/pemberitahuan-privasi" class="hover:underline">Pemberitahuan Privasi</a>
                       </li>
                   </ul>
               </div>
