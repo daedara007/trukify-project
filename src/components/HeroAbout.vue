@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10 py-20">
       
       <div class="flex-1">
-        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">
           Tentang Kami
         </h2>
         <p class="text-gray-700 leading-relaxed max-w-md">
