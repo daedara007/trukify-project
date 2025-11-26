@@ -3,6 +3,7 @@ import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';
 import OverviewHome from './OverviewHome.vue';
 import ShowcaseHome from './ShowcaseHome.vue';
+import CTA from './CTA.vue';
 import Footer from './Footer.vue';
 
 </script>
@@ -12,5 +13,6 @@ import Footer from './Footer.vue';
     <Hero/>
     <OverviewHome/>
     <ShowcaseHome/>
+    <CTA/>
     <Footer/> 
 </template>
