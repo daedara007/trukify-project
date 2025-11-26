@@ -1,5 +1,5 @@
 <template>
-<footer class="bg-sky-800">
+<footer class="bg-[#146C94]">
     <div class="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8 text-white font-montserrat">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -7,11 +7,11 @@
                   <img src="../assets/Logo.png" class="h-14 me-3" alt="FlowBite Logo" />
                   <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Trukify</span>
               </a>
-              <a class="mt-2">PT Maju Jaya, Trukify<br>Jl. Soekarno Hatta Km. 2, Gn. Samarinda,<br>Kec. Balikpapan Utara, Kota Balikpapan,<br>Kalimantan Timur 76125</a>
+              <a class="hidden md:block mt-2">PT Maju Jaya, Trukify<br>Jl. Soekarno Hatta Km. 2, Gn. Samarinda,<br>Kec. Balikpapan Utara, Kota Balikpapan,<br>Kalimantan Timur 76125</a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
               <div>
-                  <h2 class="mb-6 text-sm font-bold text-heading uppercase">Site Map</h2>
+                  <h2 class="mb-6 text-sm font-bold text-heading">Site Map</h2>
                   <ul class="text-body font-medium">
                       <li class="mb-4">
                           <a href="/" class="hover:underline">Homepage</a>
@@ -26,12 +26,12 @@
                           <a href="/bantuan" class="hover:underline">Bantuan</a>
                       </li>
                       <li>
-                          <a href="/kontak" class="hover:underline">Kontak</a>
+                          <a href="/sewa" class="hover:underline">Sewa</a>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-bold text-heading uppercase">Legal</h2>
+                  <h2 class="mb-6 text-sm font-bold text-heading">Legal</h2>
                   <ul class="text-body font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Syarat Dan Ketentuan</a>
@@ -43,7 +43,10 @@
               </div>
           </div>
       </div>
-      <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+      <div class="justify-center mt-10 text-center">
+            <a>Copyright © 2025, Trukify, Hak Cipta Dilindungi</a>
+      </div>
+      <!-- <hr class="my-6 border-default sm:mx-auto lg:my-8" /> -->
     </div>
 </footer>
 </template>
