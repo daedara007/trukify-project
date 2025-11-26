@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-[#CCE2ED] py-16">
+  <section class="w-full bg-[#AFD3E2] py-16">
     <div class="max-w-7xl mx-auto px-4">
       <!-- Title -->
       <h2 class="text-center text-3xl lg:text-4xl font-bold text-gray-900 mb-16">

@@ -46,7 +46,6 @@
       <div class="justify-center mt-10 text-center">
             <a>Copyright © 2025, Trukify, Hak Cipta Dilindungi</a>
       </div>
-      <!-- <hr class="my-6 border-default sm:mx-auto lg:my-8" /> -->
     </div>
 </footer>
 </template>
