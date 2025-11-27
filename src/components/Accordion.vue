@@ -1,6 +1,6 @@
 <template>
   
-<div class="p-14" id="accordion-card" data-accordion="collapse">
+<div class="p-14 lg:px-82" id="accordion-card" data-accordion="collapse">
   <h2 id="accordion-card-heading-1">
     <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-base shadow-xs border border-default hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none" data-accordion-target="#accordion-card-body-1" aria-expanded="true" aria-controls="accordion-card-body-1">
       <span>Apa saja yang termasuk dalam harga sewa?</span>
