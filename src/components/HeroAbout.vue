@@ -3,14 +3,8 @@
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10 py-20">
       
       <div class="flex-1">
-        <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">
-          Tentang Kami
-        </h2>
-        <p class="text-gray-700 leading-relaxed max-w-md">
-          Trukify di bawah naungan PT Maju Jaya, adalah platform 
-          rental truck yang ada di Indonesia, kami menawarkan 
-          keandalan dalam bisnis.
-        </p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">Tentang Kami</h2>
+        <p class="text-gray-700 leading-relaxed max-w-md">Trukify di bawah naungan PT Maju Jaya, adalah platform rental truck yang ada di Indonesia, kami menawarkan keandalan dalam bisnis.</p>
       </div>
 
       <div class="hidden lg:block justify-center p-20 lg:py-0">
