@@ -26,7 +26,7 @@ const isOpen = ref(false);
       </svg>
     </button>
     <div class="hidden w-full lg:block lg:w-auto space-x-6 text-white font-extralight" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 bg-neutral-secondary-soft lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-neutral-primary xl:space-y-0 space-y-4">
+      <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 bg-neutral-secondary-soft lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-neutral-primary lg:space-y-0 space-y-4">
         <li>
           <a href="/armada" class="block py-2 px-3 bg-brand rounded lg:bg-transparent lg:text-fg-brand lg:p-0">Armada</a>
         </li>

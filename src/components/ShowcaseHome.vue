@@ -4,7 +4,7 @@
   
       <h2 class="text-center text-3xl lg:text-4xl font-bold text-gray-900 mb-16">Armada Yang Memenuhi Kebutuhan Anda</h2>
 
-      <div class="flex lg:grid lg:grid-cols-4 gap-12 overflow-x-auto lg:overflow-visible pb-6">
+      <div class="flex lg:grid lg:grid-cols-4 gap-12 overflow-x-auto lg:overflow-visible pb-6 px-4">
       
         <div v-for="(item, index) in armada" :key="index" class="min-w-[260px] lg:min-w-0 shrink-0 text-center">
   
