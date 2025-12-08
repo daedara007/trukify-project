@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F4EEEA] min-h-screen px-6 md:px-16 py-40">
+  <div class="bg-[#FAF6F6] min-h-screen px-6 md:px-16 py-40">
     <!-- Title -->
     <h1 class="text-4xl md:text-5xl font-bold text-center mb-10">
       Armada Lengkap Kami
@@ -24,7 +24,7 @@
     <div class="flex justify-center mb-12">
       <div class="relative w-full max-w-xl">
         <span class="absolute left-4 top-3 text-gray-500">
-          🔍
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
         </span>
         <input
           type="text"
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Grid -->
-    <div class="grid grid-row lg:grid-cols-3 justify-center gap-8 lg:px-60">
+    <div class="grid grid-row xl:grid-cols-3 justify-center gap-8 lg:px-30">
       <div
         v-for="item in filteredArmada"
         :key="item.name"
@@ -47,37 +47,41 @@
         <h2 class="text-xl font-bold mb-4">{{ item.name }}</h2>
 
         <div class="space-y-2 text-sm">
-          <!-- Tenaga -->
-          <div class="flex items-center space-x-3">
-            <div class="bg-[#D8F3FE] p-2 rounded-lg">
-              ⚙️
+          <div class="flex flex-row justify-evenly">
+            <!-- Tenaga -->
+            <div class="flex flex-1 items-center space-x-3">
+              <div class="bg-[#19A7CE] p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-engine"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 4a1 1 0 0 1 0 2h-1v1h.383a2 2 0 0 1 1.787 1.106l1.45 2.894h.38v-1a1 1 0 0 1 .883 -.993l.117 -.007h2a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-2a1 1 0 0 1 -1 -1v-1h-1v1a2 2 0 0 1 -1.85 1.995l-.15 .005h-3.465a2 2 0 0 1 -1.664 -.89l-1.407 -2.11h-1.464a1 1 0 0 1 -.993 -.883l-.007 -.117v-2h-1v2a1 1 0 0 1 -2 0v-6a1 1 0 1 1 2 0v2h1v-2a1 1 0 0 1 1 -1h1.584l1.709 -1.707a1 1 0 0 1 .576 -.284l.131 -.009h1v-1h-1a1 1 0 1 1 0 -2z" /></svg>
+              </div>
+              <p>Tenaga {{ item.hp }} HP</p>
             </div>
-            <p>Tenaga {{ item.hp }} HP</p>
+
+            <!-- Angkut -->
+            <div class="flex flex-1 items-center space-x-3">
+              <div class="bg-[#19A7CE] p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-weight"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.835 9h10.33a1 1 0 0 1 .984 .821l1.637 9a1 1 0 0 1 -.984 1.179h-13.604a1 1 0 0 1 -.984 -1.179l1.637 -9a1 1 0 0 1 .984 -.821z" /></svg>
+              </div>
+              <p>Daya Angkut {{ item.capacity }} Ton</p>
+            </div>
           </div>
 
-          <!-- Angkut -->
-          <div class="flex items-center space-x-3">
-            <div class="bg-[#D8F3FE] p-2 rounded-lg">
-              📦
+          <div class="flex flex-row justify-evenly">
+            <!-- Transmisi -->
+            <div class="flex flex-1 items-center space-x-3">
+              <div class="bg-[#19A7CE] p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-manual-gearbox"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 8l0 8" /><path d="M12 8l0 8" /><path d="M19 8v2a2 2 0 0 1 -2 2h-12" /></svg>
+              </div>
+              <p>Transmisi {{ item.transmisi }}</p>
             </div>
-            <p>Daya Angkut {{ item.capacity }} Ton</p>
-          </div>
 
-          <!-- Transmisi -->
-          <div class="flex items-center space-x-3">
-            <div class="bg-[#D8F3FE] p-2 rounded-lg">
-              🕹️
+            <!-- Axle -->
+            <div class="flex flex-1 items-center space-x-3">
+              <div class="bg-[#19A7CE] p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rv-truck"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M9 17h6" /><path d="M19 17h1a1 1 0 0 0 1 -1v-4.528a2 2 0 0 0 -.211 -.894l-.96 -1.92a3 3 0 0 0 -2.683 -1.658h-11.146a3 3 0 0 0 -3 3v6a1 1 0 0 0 1 1h1" /><path d="M3 12h18" /><path d="M15 12v-5" /><path d="M6 4m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z" /></svg>
+              </div>
+              <p>Axle {{ item.axle }}</p>
             </div>
-            <p>Transmisi {{ item.transmisi }}</p>
-          </div>
-
-          <!-- Axle -->
-          <div class="flex items-center space-x-3">
-            <div class="bg-[#D8F3FE] p-2 rounded-lg">
-              🚛
-            </div>
-            <p>Axle {{ item.axle }}</p>
-          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -100,15 +104,7 @@ export default {
           axle: "4x2",
           image: "/assets/truck1.png",
           type: "Engkel",
-        },
-        {
-          name: "Isuzu ELF NLR",
-          hp: 120,
-          capacity: 3,
-          transmisi: "Manual",
-          axle: "4x2",
-          image: "/assets/truck1.png",
-          type: "Engkel",
+          id: "elf1",
         },
         {
           name: "Canter FE 71",
@@ -118,6 +114,7 @@ export default {
           axle: "4x2",
           image: "/assets/truck2.png",
           type: "Engkel",
+          id: "canter1",
         },
       ],
     };
