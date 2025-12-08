@@ -109,7 +109,7 @@ const submitForm = () => {
         </div>
       </div>
 
-      <div class="mt-4 flex flex-row justify-between items-center">  
+      <div class="mt-4 flex flex-col-reverse md:flex-row md:justify-between md:items-center gap-4">  
             
             <div class="flex items-center space-x-4">
               <div class="w-8 h-8 shrink-0">
