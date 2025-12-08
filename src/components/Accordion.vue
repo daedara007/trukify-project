@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mx-auto space-y-4 lg:px-80 py-20">
+  <div class="w-full mx-auto space-y-4 lg:px-80 p-4 py-20">
     <div
       v-for="(item, index) in items"
       :key="index"
