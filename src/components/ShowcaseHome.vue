@@ -12,7 +12,7 @@
 
           <p class="text-sm text-gray-700 mt-1 leading-tight"> {{ item.desc1 }} <br/>{{ item.desc2 }} </p>
 
-          <button class="mt-4 font-semibold text-gray-900 hover:text-[#146C94] transition"><a href="/armada">Lihat Lebih Banyak</a></button>
+          <button class="mt-4 font-semibold text-gray-900 hover:text-[#146C94] transition"><a :href="`/armada?category=${item.name}`">Lihat Lebih Banyak</a></button>
 
           <img :src="item.image" class="w-full h-48 object-contain mx-auto mt-6"/>
         </div>

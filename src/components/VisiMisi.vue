@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-20 bg-[#FAF7F7]">
+  <section class="w-full py-20 bg-[#F6F1F1]">
     <div class="max-w-7xl mx-auto px-6 flex flex-col gap-20">
 
       <!-- VISI KAMI -->

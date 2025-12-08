@@ -11,7 +11,6 @@ import PageArmada from '../components/PageArmada.vue'
 
 const routes = [
   { path: '/', component: PageHome },
-  // { path: '/armada', component: Placeholder },
   { path: '/tentang', component: PageAbout },
   { path: '/bantuan', component: PageHelp },
   { path: '/sewa', component: Placeholder },
@@ -19,6 +18,7 @@ const routes = [
   { path: '/syarat-dan-ketentuan', component: PageTC },
   { path: '/pemberitahuan-privasi', component: PagePrivacy },
   { path: '/armada', component: PageArmada },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: Placeholder },
 ]
 
 const router = createRouter({

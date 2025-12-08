@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#FAF6F6] min-h-screen px-6 md:px-16 py-40">
+  <div class="bg-[#F6F1F1] min-h-screen px-6 md:px-16 py-40">
     <!-- Title -->
     <h1 class="text-4xl md:text-5xl font-bold text-center mb-10">
       Armada Lengkap Kami
@@ -102,20 +102,125 @@ export default {
           capacity: 3,
           transmisi: "Manual",
           axle: "4x2",
-          image: "/assets/truck1.png",
+          image: "https://isuzu-online.com/wp-content/uploads/2022/07/Isuzu-NLR-Bak-Besi.png",
           type: "Engkel",
           id: "elf1",
         },
         {
-          name: "Canter FE 71",
+          name: "Mitsubishi Canter FE 71",
           hp: 108,
           capacity: 2,
           transmisi: "Manual",
           axle: "4x2",
-          image: "/assets/truck2.png",
+          image: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1300,h_900/https://www.mitsubishi-cikarang.com/wp-content/uploads/2017/02/bakbesi.png",
           type: "Engkel",
           id: "canter1",
         },
+        {
+          name: "Hino 115 SD STD - Euro4",
+          hp: 115,
+          capacity: 4,
+          transmisi: "Manual",
+          axle: "4x2",
+          image: "https://www.hino.co.id//assets/uploads/products/115SDR-Box_(1)1.png",
+          type: "Engkel",
+          id: "hinosd1",
+        },
+
+        {
+          name: "Hino 136 HDX 4x4",
+          hp: 136,
+          capacity: 6,
+          transmisi: "Manual",
+          axle: "4x4",
+          image: "https://www.hino.co.id//assets/uploads/products/9c18458ff9bf22371fa4608c75b04f1f2.png",
+          type: "Dump Truck",
+          id: "hinohdx1",
+        },
+        {
+          name: "UD Quester CGE",
+          hp: 370,
+          capacity: 20,
+          transmisi: "Manual 9 percepatan",
+          axle: "8x4",
+          image: "https://www.udtrucks.com/sites/default/files/styles/truck_specification_images_main/public/2022-12/Quester-CGE_512x446_8.jpg",
+          type: "Dump Truck",
+          id: "udquester1",
+        },
+        {
+          name: "Volvo A45",
+          hp: 496,
+          capacity: 42,
+          transmisi: "Automatic",
+          axle: "6x6",
+          image: "https://www.volvoce.com/-/media/aprimo/images/articulated-haulers/a45/volvo-find-articulated-hauler-a45j-1000x1000.avif?mw=512&v=bIJ4Pw&f=avif&q=64&hash=D4D10220E3BCA0200FBDC92867BEB62D",
+          type: "Dump Truck",
+          id: "volvoa45",
+        },
+
+        {
+          name: "Mitsubishi Fighter X",
+          hp: 240,
+          capacity: 16,
+          transmisi: "Manual",
+          axle: "4x2",
+          image: "https://www.ktbfuso.co.id/wp-content/uploads/2023/02/VARIAN-8-FM-65-FSL-HiGear_WingBox-2.png",
+          type: "Tronton",
+          id: "fighterx1",
+        },
+        {
+          name: "Hino FM 280 JW - Euro4",
+          hp: 280,
+          capacity: 18,
+          transmisi: "Manual",
+          axle: "6x4",
+          image: "https://www.hino.co.id//assets/uploads/products/FM280JW_HIRES_copy.png",
+          type: "Tronton",
+          id: "hinofm280",
+        },
+        {
+          name: "Isuzu Giga FVM",
+          hp: 245,
+          capacity: 16,
+          transmisi: "Manual",
+          axle: "6x2",
+          image: "https://isuzu-astra.com/wp-content/uploads/2021/09/Isuzu-Giga-FVM.png",
+          type: "Tronton",
+          id: "gigafvm1",
+        },
+
+        {
+          name: "Volvo FH16",
+          hp: 780,
+          capacity: 90,
+          transmisi: "Automatic",
+          axle: "6x4",
+          image: "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-cgi-exterior-1?qlt=82&wid=1024&ts=1705310176284&dpr=off&fit=constrain&fmt=png-alpha",
+          type: "Trailer",
+          id: "volvofh16",
+        },
+        {
+          name: "Scania R770 6x4",
+          hp: 770,
+          capacity: 100,
+          transmisi: "Automatic",
+          axle: "6x4",
+          image: "https://i.ibb.co.com/Gv2yTdxv/scaniar770.png",
+          type: "Trailer",
+          id: "scaniar770",
+        },
+        {
+          name: "Renault T High",
+          hp: 520,
+          capacity: 26,
+          transmisi: "Automatic",
+          axle: "6x2",
+          image: "https://www.renault-trucks.co.uk/sites/default/files/2025-02/3qtr_RGB_0.png",
+          type: "Trailer",
+          id: "renaulttlonghaul",
+        },
+
+
       ],
     };
   },
@@ -129,5 +234,22 @@ export default {
         );
     },
   },
+
+  
+  mounted() {
+    const query = this.$route.query.category;
+    if (query && this.tabs.includes(query)) {
+      this.activeTab = query;
+    }
+  },
+
+  watch: {
+    '$route.query.category'(newCategory) {
+      if (newCategory && this.tabs.includes(newCategory)) {
+        this.activeTab = newCategory;
+      }
+    },
+  },
+
 };
 </script>

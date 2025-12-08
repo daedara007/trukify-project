@@ -46,7 +46,7 @@ const submitForm = () => {
 </script>
 
 <template>
-  <section class="bg-[#FAF6F6] py-16 px-4 lg:px-80 font-sans">
+  <section class="bg-[#F6F1F1] py-16 px-4 lg:px-80 font-sans">
     <div class="flex flex-col px-6 space-y-6">
       <div>
             <label class="block text-gray-600 mb-2 font-medium">Nama Lengkap</label>

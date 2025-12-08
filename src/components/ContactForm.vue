@@ -39,7 +39,7 @@ const submitForm = () => {
 </script>
 
 <template>
-  <section class="bg-[#FAF6F6] py-16 px-4 lg:px-6">
+  <section class="bg-[#F6F1F1] py-16 px-4 lg:px-6">
     <div class="max-w-6xl mx-auto">
       
       <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
