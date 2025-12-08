@@ -13,7 +13,7 @@
         @click="activeTab = item"
         class="pb-1"
         :class="activeTab === item 
-          ? 'text-black border-b-2 border-[#2BA8D9]' 
+          ? 'text-black border-b-2 border-[#19A7CE]' 
           : 'text-gray-500'"
       >
         {{ item }}
