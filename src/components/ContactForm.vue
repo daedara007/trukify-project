@@ -1,7 +1,6 @@
 <script setup>
-import { reactive } from 'vue';
+import { reactive, computed, ref } from 'vue';
 
-// State untuk menyimpan data form
 const form = reactive({
   name: '',
   email: '',
@@ -9,15 +8,38 @@ const form = reactive({
   message: ''
 });
 
-// Fungsi untuk menangani pengiriman pesan
+const isFormValid = computed(() => {
+  return (
+    form.name.trim() !== '' &&
+    form.email.trim() !== '' &&
+    form.phone.trim() !== '' &&
+    form.message.trim() !== ''
+  );
+});
+
+const resetForm = () => {
+  form.name = '';
+  form.email = '';
+  form.phone = '';
+  form.message = '';
+};
+
+const isModalOpen = ref(false);
+
 const submitForm = () => {
+  if (!isFormValid.value) {
+    alert('Semua field wajib diisi.');
+    return;
+  }
+
   console.log('Mengirim pesan:', form);
-  alert('Pesan berhasil dikirim (simulasi)!');
+  isModalOpen.value = true;
+  resetForm();
 };
 </script>
 
 <template>
-  <section class="bg-[#FAF6F6] py-16 px-4 lg:px-6 font-sans">
+  <section class="bg-[#FAF6F6] py-16 px-4 lg:px-6">
     <div class="max-w-6xl mx-auto">
       
       <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
@@ -121,4 +143,34 @@ const submitForm = () => {
 
     </div>
   </section>
+
+  <div 
+    v-if="isModalOpen"
+    class="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50"
+  >
+    <div class="bg-[#17A6D8] text-white rounded-2xl p-10 w-[90%] max-w-md text-center relative">
+
+      <!-- Close button -->
+      <button 
+        @click="isModalOpen = false" 
+        class="absolute top-3 right-3 text-white text-xl font-bold"
+      >
+        ×
+      </button>
+
+      <div class="flex justify-center mb-4">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" stroke="black" stroke-width="5" viewBox="0 0 24 24">
+            <path d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+      </div>
+
+      <h2 class="text-xl font-bold mb-2">Terima Kasih</h2>
+      <p class="text-sm">
+        Formulir anda berhasil di kirim<br>
+        mohon menunggu hingga kami membalas
+      </p>
+    </div>
+  </div>
 </template>
