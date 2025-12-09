@@ -89,7 +89,7 @@ const submitForm = () => {
         </select>
       </div>
 
-      <div class="flex flex-row space-x-4">
+      <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
         <div class="flex-1">
           <label class="block text-gray-600 mb-2 font-medium">Tanggal Mulai</label>
           <input

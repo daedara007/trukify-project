@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import PageHome from '../components/PageHome.vue'
-import PageAbout from '../components/PageAbout.vue'
-import PageHelp from '../components/PageHelp.vue'
-import PageTC from '../components/PageTC.vue'
-import PagePrivacy from '../components/PagePrivacy.vue'
-import PageSewa from '../components/PageSewa.vue'
+import PageHome from '../pages/PageHome.vue'
+import PageAbout from '../pages/PageAbout.vue'
+import PageHelp from '../pages/PageHelp.vue'
+import PageTC from '../pages/PageTC.vue'
+import PagePrivacy from '../pages/PagePrivacy.vue'
+import PageSewa from '../pages/PageSewa.vue'
 import Placeholder from '../components/Placeholder.vue'
-import PageArmada from '../components/PageArmada.vue'
+import PageArmada from '../pages/PageArmada.vue'
 
 const routes = [
   { path: '/', component: PageHome },
