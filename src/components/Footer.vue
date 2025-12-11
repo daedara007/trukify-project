@@ -25,6 +25,9 @@
                       <li class="mb-4">
                           <a href="/bantuan" class="hover:underline">Bantuan</a>
                       </li>
+                      <li class="mb-4">
+                          <a href="/aboutdev" class="hover:underline">Tentang Developer</a>
+                      </li>
                       <li>
                           <a href="/sewa" class="hover:underline">Sewa</a>
                       </li>

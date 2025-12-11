@@ -36,6 +36,9 @@ const isOpen = ref(false);
         <li>  
           <a href="/bantuan" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary lg:hover:bg-transparent lg:border-0 lg:hover:text-fg-brand lg:p-0 lg:dark:hover:bg-transparent">Bantuan</a>
         </li>
+        <li>  
+          <a href="/aboutDev" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary lg:hover:bg-transparent lg:border-0 lg:hover:text-fg-brand lg:p-0 lg:dark:hover:bg-transparent">Tentang Developer</a>
+        </li>
         <li>
           <a href="/sewa" class="py-2 px-3 text-heading bg-transparent outline-solid rounded-xs hover:bg-[#a8a8a860] h-8 w-40 mt-10">Sewa Sekarang</a>
         </li>
