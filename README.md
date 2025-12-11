@@ -1,12 +1,12 @@
 file yang terlibat </br>
--/src/components/Navbar.vue
--/src/components/Footer.vue
--/src/components/HeroAboutdev.vue
--/src/components/NilaiAboutDev.vue
--/src/pages/PagesAboutDev.vue
+-/src/components/Navbar.vue </br>
+-/src/components/Footer.vue </br>
+-/src/components/HeroAboutdev.vue </br>
+-/src/components/NilaiAboutDev.vue </br>
+-/src/pages/PagesAboutDev.vue </br>
 
-routing ada di
--/src/router/index.js
+routing ada di </br>
+-/src/router/index.js </br>
 
 <!-- # Vue 3 + Vite
 
